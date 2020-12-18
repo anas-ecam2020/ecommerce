@@ -16,9 +16,21 @@ class Product(models.Model):
     name = models.CharField(max_length=200, null=True)
     price = models.FloatField()
     digital = models.BooleanField(default=False, null=True, blank=False)
+    image = models.ImageField(null=True, blank=True)
+
 
     def __str__(self):
         return self.name
+
+    # Property decorator lets us access to it as an attribute instead of a method
+    # It avoids to get any error in case an image misses
+    @property
+    def imageURL(self):
+        try:
+            url = self.image.url
+        except:
+            url = ''
+        return url
 
 # Order has a ManyToOne relationship with the Customer
 class Order(models.Model):
