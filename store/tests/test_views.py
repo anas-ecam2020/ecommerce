@@ -1,7 +1,5 @@
 from django.test import TestCase, Client
 from django.urls import reverse
-from store.models import Customer, Product, Order, OrderItem, ShippingAddress
-import json
 
 
 # TestViews tests that the response get from the server is 200
