@@ -3,3 +3,7 @@
 
 # vscode settings
 .vscode
+
+# Excluding __MACOSX folder
+
+__MACOSX
