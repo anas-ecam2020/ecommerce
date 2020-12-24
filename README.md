@@ -4,7 +4,6 @@ A useful e-commerce application written in Django! It can be used as a base proj
 
 
  ## Installation
- ---
 
 Before jumping on the installation, you just have to download the repository and activate a virtual environment with the following commands:
 
@@ -46,19 +45,17 @@ python manage.py runserver
 Once the server is running, it is possible to look at the project on the browser at the following local URL: http://127.0.0.1:8000/
 
 ## Usage
----
 
 Before making use of this project, make sure that you have some basic django knowledge as well as some JavaScript, CSS and HTML knowledge.
 
 
 ## License
-----
+
 
 [MIT License](https://github.com/anas-ecam2020/ecommerce/blob/main/LICENSE.txt)
 
 
 ## Main components
----
 
 * [Models](https://github.com/anas-ecam2020/ecommerce/blob/main/store/models.py)
 
@@ -81,6 +78,5 @@ The store/static folder contains all the CSS, the images and the JavaScript need
 Unit Testing allows to check if some parts of the code such as the views, the urls and the models run properly.
 
 ## Author
----
 
 Anas Rabai
