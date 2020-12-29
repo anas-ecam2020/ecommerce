@@ -14,7 +14,7 @@ class TestModels(TestCase):
             image = ''
         )
 
-        self.assertEquals(self.product1.image, '')
+        self.assertEquals(self.product1.imageURL, '')
 
 
     def test_orderitem_get_cart_total(self):
@@ -45,4 +45,4 @@ class TestModels(TestCase):
             date_added=time.time(),
         )
 
-        self.assertEquals(self.orderitem1.quantity * self.product1.price, 500)
+        self.assertEquals(self.orderitem1.get_total, 500)
